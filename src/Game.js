@@ -6,7 +6,7 @@ function Game() {
   return (
     <div className="game-container">
       <div className='header'>
-        <h1>❌ Jogo da Velha ⭕</h1>
+        <h1><span role='img' aria-label='x'>❌</span> Jogo da Velha<span role='img' aria-label='O'>⭕</span></h1>
       </div>
       <Board/>
     </div>

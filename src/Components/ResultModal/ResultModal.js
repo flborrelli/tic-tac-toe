@@ -6,8 +6,11 @@ import Reset from "../Reset/Reset.js";
 
 function ResultModal({winner}) {
   const [open, setOpen] = useState(false);
-
+  const [isWinner, setIsWinner] = useState(false);
   
+  if(winner === 'O' || winner === 'X' || winner === 'E'){
+    setIsWinner(true)
+  }
 
   return (
     <Modal
@@ -16,7 +19,6 @@ function ResultModal({winner}) {
       open={winner}
       size="mini"
     >
-    {console.log(winner)}
       {winner === 'E' ? <Modal.Header>Empate</Modal.Header> : <Modal.Header>{winner} venceu</Modal.Header>}
       <Modal.Actions>
         <Button color='teal' onClick={() => setOpen(false)}>

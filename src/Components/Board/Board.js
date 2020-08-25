@@ -69,7 +69,7 @@ function Board() {
 
   return (
     <>
-    <ResultModal winner={winner}/>
+    {/* <ResultModal winner={winner}/> */}
     {winner ?  <div className={`jogador-da-vez ${currentPlayer}`}>Jogo Finalizado</div> : <div className={`jogador-da-vez ${currentPlayer}`}>Jogador {currentPlayer} sua vez!</div>}
     <div className="container">
       <div className="game">
@@ -97,7 +97,7 @@ function Board() {
 
       {winner && (
         <footer>
-          {winner === 'E' ? <h2 className={winner}>Empate 😟</h2> : <h2 className={winner}>{winner} venceu 🏆 </h2>}
+          {winner === 'E' ? <h2 className={winner}>Empate <span role='img' aria-label='worried-face'>😟</span></h2> : <h2 className={winner}>{winner} venceu <span role='img' aria-label='throphy'>🏆</span></h2>}
         </footer>
       )}
       </div>
