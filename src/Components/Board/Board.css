@@ -1,3 +1,8 @@
+:root{
+  --O-color:blue;
+  --X-color:red;
+}
+
 .container {
   margin-top: 80px;
 }
@@ -25,5 +30,13 @@
 
 .board-grid button:hover {
   background: rgba(50,213,196, .6);
+}
+
+.btn.X, .btn.X:hover{
+  background: var(--X-color);
+}
+
+.btn.O, .btn.O:hover{
+  background: var(--O-color);
 }
 
