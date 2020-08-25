@@ -1,0 +1,24 @@
+.container {
+  margin-top: 60px;
+}
+
+.game {
+  border: 2px solid #333;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px 2px rgba(105, 105, 105, 0.4);;
+}
+
+.board-row button {
+  width: 120px;
+  height: 120px;
+  background: rgb(50,213,196);
+  border-radius: 4px;
+  margin: 2px;
+  font-size: 36px;
+  font-weight: thin;
+}
+
+.board-row button:hover {
+  background: rgba(50,213,196, .6);
+}
+
