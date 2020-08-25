@@ -1,6 +1,6 @@
 :root{
-  --O-color:blue;
-  --X-color:red;
+  --O-color: #83c2ff;
+  --X-color:#ff9ebe;
 }
 
 .container {
@@ -32,11 +32,44 @@
   background: rgba(50,213,196, .6);
 }
 
-.btn.X, .btn.X:hover{
+.btn.X {
+  background: var(--X-color);
+  cursor: not-allowed;
+}
+
+.btn.X:hover{
   background: var(--X-color);
 }
 
-.btn.O, .btn.O:hover{
+.btn.O{
   background: var(--O-color);
+  cursor: not-allowed;
+}
+
+.btn.O:hover{
+  background: var(--O-color);
+}
+
+footer {
+  text-align: center;
+  padding: 2px;
+  border: solid 1px black;
+  margin: 30px;
+  border-radius: 4px;
+}
+
+footer h2 {
+  padding: 20px;
+  border: 1px solid rgb(124, 124, 124);
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgb(160, 160, 160);
+}
+
+footer h2.O {
+  background: var(--O-color);
+}
+
+footer h2.X {
+  background: var(--X-color);
 }
 
