@@ -1,10 +1,25 @@
 :root{
   --O-color: #83c2ff;
   --X-color:#ff9ebe;
+  --E-color: rgb(50,213,196);
+}
+
+.jogador-da-vez {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.jogador-da-vez.O {
+  color: var(--O-color);
+}
+
+.jogador-da-vez.X {
+  color: var(--X-color);
 }
 
 .container {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .game {
@@ -50,6 +65,12 @@
   background: var(--O-color);
 }
 
+.btns-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
 footer {
   text-align: center;
   padding: 2px;
@@ -63,6 +84,7 @@ footer h2 {
   border: 1px solid rgb(124, 124, 124);
   border-radius: 4px;
   box-shadow: 1px 1px 2px rgb(160, 160, 160);
+  color: #333;
 }
 
 footer h2.O {
@@ -73,3 +95,6 @@ footer h2.X {
   background: var(--X-color);
 }
 
+footer h2.E {
+  background: var(--E-color);
+}
