@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
+import './Game.css';
 import Board from './Components/Board/Board.js';
 
-function App() {
+function Game() {
   return (
-    <div className="app-container">
+    <div className="game-container">
       <div className='header'>
         <h1>Jogo da Velha</h1>
       </div>
@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default Game;
