@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Board.css";
 import Reset from "../Reset/Reset.js";
-import ResultModal from '../ResultModal/ResultModal.js';
+// import ResultModal from '../ResultModal/ResultModal.js';
 
 function Board() {
   const emptyBoard = Array(9).fill("");
